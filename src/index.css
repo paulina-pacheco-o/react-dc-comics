@@ -14,15 +14,15 @@ header {
   padding: 20px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 main {
   background-color: black;
   height: 100px;
   text-align: center;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 a {
@@ -43,4 +43,26 @@ ul li {
 
 h2 {
   color: white;
+}
+
+footer {
+  height: 100px;
+  background-color: #0282F9;
+}
+
+.footerBlu {
+  justify-content: center;
+  text-align: center;
+}
+
+footer ul {
+  color: white;
+  display: flex;
+  margin-left: 50px;
+}
+
+footer ul li {
+  list-style: none;
+  margin-right: 20px;
+  font-size: small;
 }
