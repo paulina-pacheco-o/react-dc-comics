@@ -19,6 +19,11 @@ header {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 main {
   background-color: black;
   height: auto;
@@ -106,6 +111,7 @@ footer {
 
 .comic-card {
   width: 100%;
+  padding: 10px;
 }
 
 .comic-card img {
@@ -113,6 +119,7 @@ footer {
   height: 200px;
   object-fit: cover;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 .comic-card h4 {
