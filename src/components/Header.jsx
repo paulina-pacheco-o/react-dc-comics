@@ -68,27 +68,18 @@ const Header = () => {
       <div className="container">
         <div className="row">
           <div className="col-20">
-            <div id="logo">
+            <div id="logoHeader">
               <img src="../img/dc-logo.png" alt="Logo-header" />
             </div>
           </div>
-          <div className="col-80"><ul id='menu'>
-            {menu.map((link) => {
-              return (
-                <li><a href="#">CHARACTERS</a></li>
-              )
-            })}
-
-            <li><a href="#" className="active">COMICS</a></li>
-            <li><a href="#">MOVIES</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">GAMES</a></li>
-            <li><a href="#">COLLECTIBLES</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">FANS</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">SHOP</a></li>
-          </ul></div>
+          <div className="col-80">
+            <ul id='menu'>
+              {menu.map((link) => {
+                return (
+                  <li><a href={link.href}>{link.label}</a></li>
+                )
+              })}
+            </ul></div>
         </div>
       </div>
     </header>

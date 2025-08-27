@@ -22,7 +22,9 @@ header {
   width: 80%;
 }
 
-
+.logoHeader img {
+  margin-right: 50px;
+}
 
 .container {
   width: 1200px;
@@ -61,17 +63,18 @@ ul li {
   list-style: none;
   margin-right: 20px;
   font-size: small;
+  margin-top: 40px;
 }
 
 h2 {
   color: white;
 }
 
-.menu li.active a {
+li.active a {
   color: #0282F9;
 }
 
-.menu li.active {
+li.active {
   border-bottom: #0282F9 2px;
 }
 
