@@ -1,5 +1,5 @@
 import React from 'react'
-import comicsCard from "./comicsCard";
+import ComicsCard from "./ComicsCard";
 
 const ComicsList = () => {
   const comics = [
@@ -160,7 +160,7 @@ const ComicsList = () => {
     <div className="container">
       <div className="row">
         {comics.map((comic) => {
-          return <comicsCard src={thumb} title={title} />
+          return <ComicsCard src={comic.thumb} title={comic.title} key={comic.id} />
         })}
       </div>
     </div>

@@ -76,7 +76,7 @@ const Header = () => {
             <ul id='menu'>
               {menu.map((link) => {
                 return (
-                  <li><a href={link.href}>{link.label}</a></li>
+                  <li key={link.id}><a href={link.href}>{link.label}</a></li>
                 )
               })}
             </ul></div>
